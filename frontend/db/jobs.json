@@ -1,0 +1,39 @@
+{
+    "jobs": [
+    { 
+        "id": 1, 
+        "title": "Analista de redes", 
+        "company": "Empresa 1",
+        "description": "Gerenciar e manter soluções wireless Meraki, garantindo alta disponibilidade e desempenho.<br>Configurar e administrar firewalls Sonicwall NSA para proteger a rede contra ameaças externas e internas.<br>Colaborar com o suporte de fabricantes para resolver problemas e abrir chamados técnicos quando necessário.",
+        "requirements": ["Inglês - Nível Básico", "Conhecimentos básicos em tecnologias de cloud publica (AWS, Azure ou GCP)", "Certificação Security+" ]
+    },
+    { 
+        "id": 2, 
+        "title": "Assistente de TI", 
+        "company": "Empresa 2",
+        "description": "Principais atividades:<br>Prestar suporte técnico a usuários em escritórios e, eventualmente, ir à bordo dos navios atracados próximos.<br>Registrar os atendimentos realizados através do Service Desk.<br>Dar suporte nas tarefas administrativas para atendimento das demandas de TI",
+        "requirements": ["Superior cursando Sistema da Informação, Análise de Sistemas, Engenharia de Software e áreas afins", "Pacote Office intermediário", "Experiência anterior como Assistente de Sistemas" ]
+    },
+    { 
+        "id": 3, 
+        "title": "Gerente de TI", 
+        "company": "Empresa 3",
+        "description": "iderar a equipe de TI, fornecendo suporte para garantir o bom funcionamento dos sistemas e infraestrutura tecnológica.<br>Desenvolver e implementar estratégias para otimizar os processos de TI e promover a inovação dentro da empresa, utilizando metodologias Ágeis.<br>Gerenciar projetos de tecnologia, garantindo que sejam concluídos dentro do prazo e do orçamento.<br>Atuar na segurança da informação e no cumprimento das políticas internas da empresa",
+        "requirements": ["Formação acadêmica em Ciência da Computação ou áreas relacionadas.", "Experiência anterior em gerenciamento de equipe de TI", "Habilidade com práticas e frameworks de ITSM como ITIL (Information Technology Infrastructure Library)." ]
+    },
+    { 
+        "id": 4, 
+        "title": "Tech Lead de TI", 
+        "company": "Empresa 4",
+        "description": "Gerenciar uma equipe de desenvolvedores em um ambiente educacional. Desejável conhecimento na área de desenvolvimento dentro do contexto educacional.",
+        "requirements": ["Conhecimento avançado em linguagens de desenvolvimento web", "Experiência anterior como Tech Lead (avançado)", "Conhecimento de SGBD's relacionais, como PostgreSQL, SQL Server, Oracle", "Conhecimento de Bancos de Dados não relacionais, como MongoDB, BigQuery, AzureDb ou outros bancos NoSQL", "Familiaridade com metodologias ágeis aplicadas a equipes técnicas" ]
+    },
+    { 
+        "id": 5, 
+        "title": "Desenvolvedor Frontend", 
+        "company": "Empresa 5",
+        "description": "Realizar a entrega das tarefas (issues) que foram planejadas, junto ao time, até a data de entrega de cada sprint<br>Usar boas práticas de desenvolvimento na elaboração das ferramentas garantindo a manutenibilidade e escalabilidade do sistema.<br>Documentar os desenvolvimentos realizados, registrando no sistema informações da solução<br>Testar as soluções e pensar na usabilidade do sistema.<br>Desenvolver soluções para o site de acordo com o framework",
+        "requirements": ["Conhecimento em React, Next.js, Next.UI, Node e Git", "Conhecimento em API REST", "Inglês básico", "Espanhol básico", "Desejável experiência em áreas correlatas" ]
+    }
+    ]
+  }

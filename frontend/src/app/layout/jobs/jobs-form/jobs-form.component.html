@@ -1,0 +1,20 @@
+<form class="po-row" [formGroup]="form">
+  <div class="description po-md-6">
+    <po-input name="input" p-label="Empresa" formControlName="empresa"> </po-input>
+  </div>
+  <div class="description po-md-6">
+    <po-input name="input" p-label="Nome da vaga" formControlName="nome"> </po-input>
+  </div>
+    <div class="po-sm-12">
+        <po-textarea name="textarea" p-label="Descrição da vaga:" formControlName="descricao"> </po-textarea>
+    </div>
+
+    <div class="po-sm-12">
+        <po-textarea name="textarea" p-label="Requisitos (separados por vírgula):" formControlName="requisitos"> </po-textarea>
+    </div>
+
+    <div class="po-sm-12 mt-4">
+        <po-button p-label="Salvar" (p-click)="save()"> </po-button>
+        <po-button p-label="Cancelar" [p-danger]="true" class="button" (p-click)="goToList()"> </po-button>
+    </div>
+  </form>

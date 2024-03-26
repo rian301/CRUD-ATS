@@ -1,0 +1,21 @@
+.text-right {
+  text-align: right;
+}
+
+.fa-pencil,
+.fa-trash {
+  margin-left: 0.5rem;
+}
+
+.fa-trash {
+  color: red;
+}
+
+i {
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.3s;
+  &:hover {
+    color: var(--secondary);
+  }
+}

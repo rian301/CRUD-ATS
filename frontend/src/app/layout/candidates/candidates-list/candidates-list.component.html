@@ -1,0 +1,6 @@
+<po-table [p-items]="items" [p-columns]="columns" [p-hide-columns-manager]="true">
+
+  <ng-template p-table-column-template [p-property]="'id'" let-value>
+    <i class="fa fa-trash" title="Remover candidato" (click)="deleteCandidate(value)"></i>
+  </ng-template>
+</po-table>

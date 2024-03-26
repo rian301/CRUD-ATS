@@ -1,0 +1,24 @@
+<div class="po-row">
+
+  <h1 class="po-sm-12 text-center mt-4 mb-1">{{ job?.empresa }}</h1>
+  <h3 class="po-sm-12 text-center mb-4">{{ job?.nome }}</h3>
+  <section class="description po-sm-12">
+      <h4>Descrição da vaga:</h4>
+      <p [innerHTML]="job.descricao"></p>
+  </section>
+
+  <section class="requirements po-sm-12">
+      <h4>Requisitos:</h4>
+      <ul>
+          <li *ngFor="let req of job?.requisitosArray">{{ req }};</li>
+      </ul>
+  </section>
+
+  <div class="po-sm-12 mt-4 button">
+      <po-button p-label="Quero me candidatar" (p-click)="modal.open()"> </po-button>
+  </div>
+</div>
+
+<po-modal #modal [p-title]="'Vaga ' + job.empresa">
+  <app-candidates-form (saveEmit)="modal.close()" [isModal]="true" [job]="job"></app-candidates-form>
+</po-modal>

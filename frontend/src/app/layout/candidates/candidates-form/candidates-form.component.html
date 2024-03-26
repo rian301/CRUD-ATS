@@ -1,0 +1,19 @@
+<div>
+    <h3>Informações do candidato</h3>
+
+    <form class="pt-2 po-row" [formGroup]="form">
+        <div class="po-md-6 pt-2">
+            <po-input name="input" p-label="Nome" formControlName="nome"> </po-input>
+        </div>
+        <div class="po-md-6 pt-2">
+            <po-input name="input" p-label="E-mail" formControlName="email"> </po-input>
+        </div>
+        <div class="po-md-6 pt-2" *ngIf="!isModal">
+            <po-select name="icon" p-clean p-label="Cargo" [p-options]="options" formControlName="cargo">
+            </po-select>
+        </div>
+    </form>
+    <div class="pt-4">
+        <po-button class="button primary"  p-label="Salvar" (p-click)="save()"></po-button>
+    </div>
+</div>

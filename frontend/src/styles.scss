@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary: #494440;
+    --secondary: #feac0e;
+
+    --secondary-opacity: #feaa0e1e;
+    --primary-hover: #2b2725;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.login .po-button {
+    color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    &:hover {
+        background: var(--secondary-opacity) !important;
+    }
+}
+
+input.po-input {
+    --background-hover: var(--secondary-opacity);
+    --color-hover: #4e3b09;
+}
+
+.form .po-divider-label {
+    text-align: center !important;
+}
+
+po-select {
+    --color-hover: #4e3b09 !important;
+    --background-hover: var(--secondary-opacity) !important;
+    }
+
+po-menu {
+    --background-color: var(--primary);
+    --border-color: var(--primary);
+}
+
+po-menu-item {
+    --color: var(--secondary);
+    --background-color-hover: var(--primary-hover);
+    --color-hover: var(--secondary);
+}
+
+.po-toolbar-title {
+    color: var(--secondary) !important;
+}
+
+.jobs .po-widget {
+    transition: 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in; 
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in; 
+    -ms-transition: all 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+        border-color: var(--secondary) !important;
+    }
+}

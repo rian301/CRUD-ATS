@@ -1,0 +1,17 @@
+<div class="po-row jobs">
+  <div class="po-sm-12 mt-2 mb-4 text-right">
+    <po-button class="button primary"  p-label="Nova vaga" (p-click)="goToForm()"></po-button>
+  </div>
+    <po-widget class="po-lg-6 po-mb-1" [p-title]="job.empresa" *ngFor="let job of (items$ | async)" (p-click)="openJob(job.id)">
+
+        <div class="po-font-subtitle po-text-center d-flex align-items-center justify-content-around">
+          <span>{{ job?.nome }}</span>
+          <div class="text-right">
+            <i class="fa fa-user" title="Candidatos" (click)="goToListCandidates(job.id); $event.stopPropagation()"></i>
+            <i class="fa fa-pencil" title="Editar" (click)="goToEdit(job.id); $event.stopPropagation()"></i>
+            <i class="fa fa-trash" title="Excluir" (click)="deleteJob(job.id); $event.stopPropagation()"></i>
+          </div>
+        </div>
+        <div class="po-text-center sample-container-dashboard">{{ job?.descricao }}</div>
+    </po-widget>
+</div>
